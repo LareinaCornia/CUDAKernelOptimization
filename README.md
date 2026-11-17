@@ -1,4 +1,4 @@
-# CUDA Kernel Optimization
+# WarpForge
 
 CUDA implementations of SAXPY, matrix multiplication (SGEMM), and depthwise 1D
 convolution, with correctness and performance suites. Built with various optimization strategies including memory coalescing, block-level and thread-level tiling, etc
