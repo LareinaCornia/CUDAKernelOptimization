@@ -1,0 +1,24 @@
+[project]
+name = "cuda-explore"
+version = "0.1.0"
+description = "Build, test, and benchmark CUDA kernels"
+readme = "README.md"
+authors = [
+    { name = "Lareina Liu", email = "lareinacornia@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ninja>=1.13.2",
+    "numpy>=2.5.2",
+    "nvidia-ml-py>=13.610.43",
+    "prettytable>=3.18.0",
+    "torch>=2.14.0",
+]
+
+[project.scripts]
+cuda-explore = "cuda_explore.run_tests:main"
+cuda-explore-slurm = "cuda_explore.runner:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.14.0"]
+build-backend = "uv_build"

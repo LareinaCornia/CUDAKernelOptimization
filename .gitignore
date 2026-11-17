@@ -1,0 +1,11 @@
+.vscode/
+.venv/
+__pycache__/
+/build/
+/dist/
+/logs/
+/benchmarks/results/
+/conv1d
+/saxpy
+/sgemm
+/query_config
